@@ -1,20 +1,17 @@
-let lightColors = [
-  "AliceBlue",
-  "Cornsilk",
-  "DarkTurquoise",
-  "GhostWhite",
-  "LightCyan",
-  "MistyRose",
-  "PaleTurquoise",
-];
+// Color combinations
+const colorCombinations = {
+  greenBlack: { color1: "rgb(7, 155, 97)", color2: "rgb(5, 5, 10)" },
 
-let pixelGridColors = [
-  "MediumVioletRed",
-  "DarkBlue",
-  "Gold",
-  "AliceBlue",
-  "MediumTurquoise",
-];
+  redWhite: {
+    color1: "rgb(240,56,47)",
+    color2: "rgb(255, 250, 250)",
+  },
+
+  camu: {
+    color1: "rgb(229,133,150)",
+    color2: "rgb(184,24,61)",
+  },
+};
 
 let warmColors = [
   "Crimson",
@@ -39,20 +36,6 @@ let coldColors = [
   "PowderBlue",
 ];
 
-let darkColors = [
-  "Black",
-  "CadetBlue",
-  "CornflowerBlue",
-  "Crimson",
-  "DarkBlue",
-  "DarkSlateGray",
-  "Gold",
-  "MediumAquamarine",
-  "MediumTurquoise",
-  "MediumVioletRed",
-  "Salmon",
-];
-
 let yellows = [
   "rgba(255, 255, 30, .1)",
   "rgba(255, 180, 30, .2)",
@@ -62,26 +45,16 @@ let yellows = [
   "rgba(255, 255, 30, 1)",
 ];
 
-// 2022.02.02
-let channelColors = ["orangeRed", "blue", "white", "yellow", "LawnGreen"];
+let pixelGridColors = [
+  "MediumVioletRed",
+  "DarkBlue",
+  "Gold",
+  "AliceBlue",
+  "MediumTurquoise",
+];
 
-let greyColors = ["Black", "DarkGray", "LightGray", "Whitesmoke"];
-
-let backgroundColor = 246;
-
-let colors = lightColors.concat(darkColors);
-colors.sort(() => (Math.random() > 0.5 ? 1 : -1));
-
-// Random colors
-function getRandomColor(array) {
-  let returnedColor;
-  let randomChoice = Math.floor(Math.random() * array.length);
-
-  returnedColor = array[randomChoice];
-
-  return returnedColor;
-}
-
-const randomLightCol = getRandomColor(lightColors);
-const randomDarkCol = getRandomColor(darkColors);
-const randomColor = getRandomColor(colors);
+let rgbColors = [
+  [255, 0, 0],
+  [0, 255, 0],
+  [0, 0, 255],
+];
