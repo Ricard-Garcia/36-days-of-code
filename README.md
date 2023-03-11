@@ -11,7 +11,6 @@ Creative coding practice done day by day every 36 days of type edition
 ### B
 
 <img src="./2022/02-results/LETTER-B.png" width="400"/>
-<video src="./2022/02-results/LETTER-B-1.mov" width="400"></video>
 
 ### C
 
